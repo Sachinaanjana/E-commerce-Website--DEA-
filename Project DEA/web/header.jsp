@@ -70,6 +70,60 @@
 			</div>
 		</div>
 	</nav>
+        
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="userHome.jsp"><span
+					class="glyphicon glyphicon-home">&nbsp;</span>Shopping Center</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="userHome.jsp"><span
+							class="glyphicon glyphicon-home">Products</span></a></li>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">Category <span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="index.jsp?type=PANTRY">PANTRY</a></li>
+							<li><a href="index.jsp?type=DINING ROOM">DINING ROOM</a></li>
+							<li><a href="index.jsp?type=LIVING ROOM">LIVING ROOM</a></li>
+							<li><a href="index.jsp?type=BEDROOM">BEDROOM</a></li>
+							
+						</ul></li>
+					<%
+					if (notf == 0) {
+					%>
+					<li><a href="cartDetails.jsp"> <span
+							class="glyphicon glyphicon-shopping-cart"></span>Cart
+					</a></li>
+
+					<%
+					} else {
+					%>
+					<li><a href="cartDetails.jsp"
+						style="margin: 0px; padding: 0px;" id="mycart"><i
+							data-count="<%=notf%>"
+							class="fa fa-shopping-cart fa-3x icon-white badge"
+							style="background-color: #333; margin: 0px; padding: 0px; padding-bottom: 0px; padding-top: 5px;">
+						</i></a></li>
+					<%
+					}
+					%>
+					<li><a href="orderDetails.jsp">Orders</a></li>
+					<li><a href="userProfile.jsp">Profile</a></li>
+					<li><a href="./LogoutSrv">Logout</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 		
 </body>
 </html>
