@@ -38,6 +38,38 @@
 			id="message"></p>
 	</div>
 	<!-- Company Header Ending -->
+        
+        <!-- Starting Navigation Bar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.jsp"><span
+					class="glyphicon glyphicon-home">&nbsp;</span>Shopping Center</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="login.jsp">Login</a></li>
+					<li><a href="register.jsp">Register</a></li>
+					<li><a href="index.jsp">Products</a></li>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">Category <span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="index.jsp?type=PANTRY">PANTRY</a></li>
+							<li><a href="index.jsp?type=DINING ROOM">DINING ROOM</a></li>
+							<li><a href="index.jsp?type=LIVING ROOM">LIVING ROOM</a></li>
+							<li><a href="index.jsp?type=BEDROOM">BEDROOM</a></li>
+							
+						</ul></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 		
 </body>
 </html>
