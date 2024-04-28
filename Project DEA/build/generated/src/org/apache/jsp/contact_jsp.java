@@ -116,6 +116,25 @@ public final class contact_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    \n");
       out.write("            </nav>\n");
       out.write("        </div>\n");
+      out.write("        <div class=\"contact_section layout_padding\">\n");
+      out.write("            <div class=\"container\">\n");
+      out.write("                <div class=\"row\">\n");
+      out.write("                    <div class=\"col-md-6\">\n");
+      out.write("                        <h1 class=\"contact_text\">CONTACT US</h1>\n");
+      out.write("                        <div class=\"mail_sectin\">\n");
+      out.write("                            <input type=\"text\" class=\"email-bt\" placeholder=\"Name\" name=\"Name\">\n");
+      out.write("                            <input type=\"text\" class=\"email-bt\" placeholder=\"Email\" name=\"Name\">\n");
+      out.write("                            <input type=\"text\" class=\"email-bt\" placeholder=\"Phone Number\" name=\"Name\">\n");
+      out.write("                            <textarea class=\"massage-bt\" placeholder=\"Massage\" rows=\"5\" id=\"comment\" name=\"Massage\"></textarea>\n");
+      out.write("                            <div class=\"send_bt\"><a href=\"#\">SEND</a></div>\n");
+      out.write("                        </div>\n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"col-md-6\">\n");
+      out.write("                        <div class=\"image_9\"><img src=\"images/img-9.png\"></div>\n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
       out.write("    </body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {
