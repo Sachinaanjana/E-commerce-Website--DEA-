@@ -124,6 +124,59 @@
 			</div>
 		</div>
 	</nav>
+                                        
+           //ADMIN HEADER                              
+           <%
+	} else {  
+           %>               
+	
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="adminViewProduct.jsp"><span
+					class="glyphicon glyphicon-home">&nbsp;</span>Shopping Center</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="adminViewProduct.jsp">Products</a></li>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">Category <span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="adminViewProduct.jsp?type=PANTRY">PANTRY</a></li>
+							<li><a href="adminViewProduct.jsp?type=DINING ROOM">DINING ROOM</a></li>
+							<li><a href="adminViewProduct.jsp?type=LIVING ROOM">LIVING ROOM</a></li>
+							<li><a href="adminViewProduct.jsp?type=BEDROOM">BEDROOM</a></li>
+							
+						</ul></li>
+					<li><a href="adminStock.jsp">Stock</a></li>
+					<li><a href="shippedItems.jsp">Shipped</a></li>
+					<li><a href="unshippedItems.jsp">Orders</a></li>
+					<!-- <li><a href=""> <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Cart</a></li> -->
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">Update Items <span
+							class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="addProduct.jsp">Add Product</a></li>
+							<li><a href="removeProduct.jsp">Remove Product</a></li>
+							<li><a href="updateProductById.jsp">Update Product</a></li>
+						</ul></li>
+					<li><a href="./LogoutSrv">Logout</a></li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<%
+	}
+	%>                             
+                                        
 		
 </body>
 </html>
