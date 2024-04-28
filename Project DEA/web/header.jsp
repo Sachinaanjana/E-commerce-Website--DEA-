@@ -33,6 +33,11 @@
 				</div>
 			</div>
 		</form>
+                <p align="center"
+			style="color: blue; font-weight: bold; margin-top: 5px; margin-bottom: 5px;"
+			id="message"></p>
+	</div>
+	<!-- Company Header Ending -->
 		
 </body>
 </html>
