@@ -82,13 +82,15 @@
                 <div class="row">
                     <div class="col-md-6">
                         <h1 class="contact_text">CONTACT US</h1>
+                        <form>
                         <div class="mail_sectin">
-                            <input type="text" class="email-bt" placeholder="Name" name="Name">
-                            <input type="text" class="email-bt" placeholder="Email" name="Name">
-                            <input type="text" class="email-bt" placeholder="Phone Number" name="Name">
-                            <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
+                            <input type="text" class="email-bt" placeholder="Name" name="name">
+                            <input type="text" class="email-bt" placeholder="Email" name="email">
+                            <input type="text" class="email-bt" placeholder="Phone Number" name="pnumber">
+                            <textarea class="massage-bt" placeholder="Message" rows="5" id="comment" name="message"></textarea>
                             <div class="send_bt"><a href="#">SEND</a></div>
                         </div>
+                        </form>
                     </div>
                     <div class="col-md-6">
                         <div class="image_9"><img src="images/img-9.png"></div>
