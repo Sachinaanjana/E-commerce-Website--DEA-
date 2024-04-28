@@ -71,6 +71,13 @@
 		</div>
 	</nav>
         
+        //CUSTOMER HEADER
+        <%
+	} else if ("customer".equalsIgnoreCase(userType)) { 
+
+	int notf = new CartServiceImpl().getCartCount((String) session.getAttribute("username"));
+	%>
+        
         <nav class="navbar navbar-default navbar-fixed-top">
 
 		<div class="container-fluid">
