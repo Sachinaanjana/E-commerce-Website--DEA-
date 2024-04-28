@@ -26,7 +26,7 @@
 		<h1>Register !</h1>
 		<div class="main-agileinfo">
 			<div class="agileits-top">
-				<form action="./RegisterSrv" method="post">
+				<form action="./RegisterSrv" method="post">  
                                     
                                     <%
 					if (message != null) {
@@ -78,17 +78,14 @@
                                             <button type="submit" class="btn btn-success">Register</button>
 					</div>
 				</div>     
-                                        
 				</form>
                                         <br>
 				<p>Already Have Account? <a href="login.jsp"> Login Here!</a></p>
 			</div>
 		</div>
-		<!-- copyright -->
 		<div class="colorlibcopy-agile">
 			<p class="copyright_text">© 2024 Built Better. All Rights Reserved.</p>
 		</div>
-		<!-- //copyright -->
 		<ul class="colorlib-bubbles">
 			<li></li>
 			<li></li>
