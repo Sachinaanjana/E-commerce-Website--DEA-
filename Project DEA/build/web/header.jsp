@@ -39,6 +39,12 @@
 	</div>
 	<!-- Company Header Ending -->
         
+        <%
+	/* Checking the user credentials */
+	String userType = (String) session.getAttribute("usertype");
+	if (userType == null) { //LOGGED OUT
+	%>
+        
         <!-- Starting Navigation Bar -->
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
