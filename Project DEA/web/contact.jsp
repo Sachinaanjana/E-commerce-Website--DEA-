@@ -104,45 +104,37 @@
                     <div class="col-lg-3 col-sm-6">
                         <div class="fooer_logo"><img src="images/footer-logo.png"></div>
                         <p class="footer_lorem_text">
-                            There are many variat
-                     ions of passages of L
-                     orem Ipsum available
-                     , but the majority h
-                     ave suffered altera
-                     tion in some form, by 
+                            The premier destination 
+                      for elegant, luxurious and 
+                      chic furniture in Sri Lanka. 
                         </p>
                     </div>
                     <div class="col-lg-3 col-sm-6">
                         <h1 class="customer_text">LET US HELP YOU</h1>
                         <p class="footer_lorem_text">
-                            There are many variat
-                     ions of passages of L
-                     orem Ipsum available
-                     , but the majority h
-                     ave suffered altera
-                     tion in some form, by
+                            Our team is here to assist 
+                      you with any questions or
+                      issues you may have. 
+                      Whether you need help navigating
+                      our website, placing an order, 
+                      or have a general inquiry, 
+                      we're here to help.
                         </p>
                     </div>
                     <div class="col-lg-3 col-sm-6">
                         <h1 class="customer_text">INFORMATION</h1>
                         <p class="footer_lorem_text1">
-                            About<br>
-                            Careers<br>
-                            Sell on shopee<br>
-                            Press & News<br>
-                            Competitions<br>
-                            Terms & Conditions
+                            <br>
+                            Call Us<br>
+                            +94777582147<br>
+                            Email Us<br>
+                            BuildBetter@gmail.com<br>
                         </p>
                     </div>
                     <div class="col-lg-3 col-sm-6">
                         <h1 class="customer_text">OUR Design</h1>
                         <p class="footer_lorem_text">
-                            There are many variat
-                     ions of passages of L
-                     orem Ipsum available
-                     , but the majority h
-                     ave suffered altera
-                     tion in some form, by 
+                            At Build Better, we are passionate about providing high-quality furniture that not only enhances your living space but also reflects your unique taste. 
                         </p>
                     </div>
                 </div>
