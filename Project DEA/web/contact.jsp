@@ -82,7 +82,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <h1 class="contact_text">CONTACT US</h1>
-                        <form>
+                        <form action="contactservlet" method="post">
                         <div class="mail_sectin">
                             <input type="text" class="email-bt" placeholder="Name" name="name">
                             <input type="text" class="email-bt" placeholder="Email" name="email">
