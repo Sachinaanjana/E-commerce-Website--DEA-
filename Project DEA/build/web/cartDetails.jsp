@@ -89,7 +89,10 @@
 							class="fa fa-minus"></i></a></td>
 					<td><%=currAmount%></td>
 				</tr>
-
+                                <%
+				}
+				}
+				%>
 		
 				<tr style="background-color: grey; color: white;">
 					<td colspan="6" style="text-align: center;">Total Amount to
