@@ -1,8 +1,3 @@
-<%-- 
-    Document   : contact
-    Created on : Apr 28, 2024, 2:12:48 AM
-    Author     : ASUS
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
