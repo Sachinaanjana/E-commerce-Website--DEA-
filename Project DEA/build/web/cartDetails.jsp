@@ -100,7 +100,9 @@
 					<td><%=totAmount%></td>
 				</tr>
 				
-                                
+                                <%
+				if (totAmount != 0) {
+				%>
                                 
                                 
 				<tr style="background-color: grey; color: white;">
