@@ -18,7 +18,42 @@
 </head>
 <body style="background-color: #E6F9E6;">
 
-	
+	<%
+	/* Checking the user credentials */
+	String userName = (String) session.getAttribute("username");
+	String password = (String) session.getAttribute("password");
+
+	if (userName == null || password == null) {
+
+		response.sendRedirect("login.jsp?message=Session Expired, Login Again!!");
+
+	}
+
+	String addS = request.getParameter("add");
+	if (addS != null) {
+
+		int add = Integer.parseInt(addS);
+		String uid = request.getParameter("uid");
+		String pid = request.getParameter("pid");
+		int avail = Integer.parseInt(request.getParameter("avail"));
+		int cartQty = Integer.parseInt(request.getParameter("qty"));
+		CartServiceImpl cart = new CartServiceImpl();
+
+		if (add == 1) {
+			//Add Product into the cart
+			cartQty += 1;
+			if (cartQty <= avail) {
+		cart.addProductToCart(uid, pid, 1);
+			} else {
+		response.sendRedirect("./AddtoCart?pid=" + pid + "&pqty=" + cartQty);
+			}
+		} else if (add == 0) {
+			//Remove Product from the cart
+			cart.removeProductFromCart(uid, pid);
+		}
+	}
+	%>
+
 
 
 	<jsp:include page="header.jsp" />
