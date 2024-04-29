@@ -47,7 +47,25 @@
 			<tbody
 				style="background-color: white; font-size: 15px; font-weight: bold;">
 
+                     <%
+				CartServiceImpl cart = new CartServiceImpl();
+				List<CartBean> cartItems = new ArrayList<CartBean>();
+				cartItems = cart.getAllCartItems(userName);
+				double totAmount = 0;
+				for (CartBean item : cartItems) {
 
+					String prodId = item.getProdId();
+
+					int prodQuantity = item.getQuantity();
+
+					ProductBean product = new ProductServiceImpl().getProductDetails(prodId);
+
+					double currAmount = product.getProdPrice() * prodQuantity;
+
+					totAmount += currAmount;
+
+					if (prodQuantity > 0) {
+				%>
 
 				
 
