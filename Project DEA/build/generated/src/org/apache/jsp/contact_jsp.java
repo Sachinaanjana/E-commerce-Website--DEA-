@@ -123,10 +123,10 @@ public final class contact_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <h1 class=\"contact_text\">CONTACT US</h1>\n");
       out.write("                        <form>\n");
       out.write("                        <div class=\"mail_sectin\">\n");
-      out.write("                            <input type=\"text\" class=\"email-bt\" placeholder=\"Name\" name=\"Name\">\n");
-      out.write("                            <input type=\"text\" class=\"email-bt\" placeholder=\"Email\" name=\"Name\">\n");
-      out.write("                            <input type=\"text\" class=\"email-bt\" placeholder=\"Phone Number\" name=\"Name\">\n");
-      out.write("                            <textarea class=\"massage-bt\" placeholder=\"Massage\" rows=\"5\" id=\"comment\" name=\"Massage\"></textarea>\n");
+      out.write("                            <input type=\"text\" class=\"email-bt\" placeholder=\"Name\" name=\"name\">\n");
+      out.write("                            <input type=\"text\" class=\"email-bt\" placeholder=\"Email\" name=\"email\">\n");
+      out.write("                            <input type=\"text\" class=\"email-bt\" placeholder=\"Phone Number\" name=\"pnumber\">\n");
+      out.write("                            <textarea class=\"massage-bt\" placeholder=\"Message\" rows=\"5\" id=\"comment\" name=\"message\"></textarea>\n");
       out.write("                            <div class=\"send_bt\"><a href=\"#\">SEND</a></div>\n");
       out.write("                        </div>\n");
       out.write("                        </form>\n");
