@@ -1,53 +1,57 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package contact;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author ASUS
- */
-class InsertDetail {
+public class InsertDetail {
 
-    void insertDetail(String name, String email, String pnumber, String messages) throws SQLException {
+    private Connection con;
+    private PreparedStatement ps;
+
+    public void insertDetail(String name, String email, String pnumber, String messages) {
         connectToDB();
-        String query ="INSERT INTO details(id,name,email,pnumber,messages) VALUES('"+name+"','"+email+"','"+pnumber+"','"+messages+"')";
-        st.executeUpdate(query);
-        System.out.println("Record inserted");
-    }
-    
-    private void connectToDB() throws SQLException{
-        String driver= "com.mysql.jdbc.Driver";
-        String url="jdbc:mysql://localhost:3306/contact";
-        try{
-            Class.forName(driver);
-            Connection con = DriverManager.getConnection(url, "root", "");
-            Statement st = con.createStatement();
+        try {
+            String query = "INSERT INTO details(name, email, pnumber, messages) VALUES("+name+","+email+","+pnumber+","+messages+")";
+            ps = con.prepareStatement(query);
+            ps.setString(1, name);
+            ps.setString(2, email);
+            ps.setString(3, pnumber);
+            ps.setString(4, messages);
+            ps.executeUpdate();
+            System.out.println("Record inserted");
+        } catch (SQLException ex) {
+            Logger.getLogger(InsertDetail.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            closeResources();
         }
-        catch (ClassNotFoundException | SQLException ex){
+    }
+
+    private void connectToDB() {
+        String url = "jdbc:mysql://localhost:3306/contact";
+        String username = "shopping-cart";
+        String password = "";
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            con = DriverManager.getConnection(url, username, password);
+        } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(InsertDetail.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    String getName(){
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
+    private void closeResources() {
+        try {
+            if (ps != null) {
+                ps.close();
+            }
+            if (con != null) {
+                con.close();
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(InsertDetail.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
-    String getEmail(){
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    String getPnumber(){
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    String getMessages(){
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
 }
