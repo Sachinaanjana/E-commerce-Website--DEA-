@@ -18,7 +18,6 @@
 <body style="background-color: #E6F9E6;">
 
 	<%
-	/* Checking the user credentials */
 	String userName = (String) session.getAttribute("username");
 	String password = (String) session.getAttribute("password");
 
@@ -39,7 +38,6 @@
 		CartServiceImpl cart = new CartServiceImpl();
 
 		if (add == 1) {
-			//Add Product into the cart
 			cartQty += 1;
 			if (cartQty <= avail) {
 		cart.addProductToCart(uid, pid, 1);
@@ -47,7 +45,6 @@
 		response.sendRedirect("./AddtoCart?pid=" + pid + "&pqty=" + cartQty);
 			}
 		} else if (add == 0) {
-			//Remove Product from the cart
 			cart.removeProductFromCart(uid, pid);
 		}
 	}
@@ -60,9 +57,7 @@
 	<div class="text-center"
 		style="color: green; font-size: 24px; font-weight: bold;">Cart
 		Items</div>
-	<!-- <script>document.getElementById('mycart').innerHTML='<i data-count="20" class="fa fa-shopping-cart fa-3x icon-white badge" style="background-color:#333;margin:0px;padding:0px; margin-top:5px;"></i>'</script>
- -->
-	<!-- Start of Product Items List -->
+	
 	<div class="container">
 
 		<table class="table table-hover">
@@ -155,8 +150,7 @@
 			</tbody>
 		</table>
 	</div>
-	<!-- ENd of Product Items List -->
-
+	
 
 	<%@ include file="footer.html"%>
 
