@@ -21,9 +21,9 @@
 <body style="background-color: #E6F9E6;">
 	<!--Company Header Starting  -->
 	<div class="container-fluid text-center"
-		style="margin-top: 45px; background-color: #fcec19; color: white; padding: 5px;">
-		<h2>BUILT BETTER</h2>
-		<h6>We Specialize in Furnitures</h6>
+		style="margin-top: 45px; background-color: white; color: white; padding: 5px;">
+		<br><a href="index.jsp"><img src="images/logo.png"></a>
+		<h6 style="color:black">We Specialize in Furnitures</h6>
 		<form class="form-inline" action="index.jsp" method="get">
 			<div class="input-group">
 				<input type="text" class="form-control" size="50" name="search"
