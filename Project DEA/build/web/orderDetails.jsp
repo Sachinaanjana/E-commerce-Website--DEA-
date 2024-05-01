@@ -58,7 +58,9 @@
 				</thead>
 				<tbody
 					style="background-color: white; font-size: 15px; font-weight: bold;">
-					
+					<%
+					for (OrderDetails order : orders) {
+					%>
 
 					<tr>
 						<td><img src="./ShowImage?pid=<%=order.getProductId()%>"
