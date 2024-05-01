@@ -117,6 +117,19 @@ public final class about_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                </nav>\r\n");
       out.write("            </div>\r\n");
       out.write("        </div>\r\n");
+      out.write("        <div class=\"about_section layout_padding\">\r\n");
+      out.write("            <div class=\"container\">\r\n");
+      out.write("                <div class=\"row\">\r\n");
+      out.write("                    <div class=\"col-md-6\">\r\n");
+      out.write("                        <h1 class=\"about_text\">About Us</h1>\r\n");
+      out.write("                        <p class=\"lorem_text\">The premier destination for elegant, luxurious and chic furniture in Sri Lanka.</p>\r\n");
+      out.write("                    </div>\r\n");
+      out.write("                    <div class=\"col-md-6\">\r\n");
+      out.write("                        <div class=\"image_1\"><img src=\"images/img-1.png\"></div>\r\n");
+      out.write("                    </div>\r\n");
+      out.write("                </div>\r\n");
+      out.write("            </div>\r\n");
+      out.write("        </div>\r\n");
       out.write("    </body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {
