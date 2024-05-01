@@ -10,6 +10,12 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+
+
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -26,7 +32,7 @@
 		<h1>Register !</h1>
 		<div class="main-agileinfo">
 			<div class="agileits-top">
-				<form action="./RegisterSrv" method="post">  
+				<form action="./RegisterSrv" method="post">
                                     
                                     <%
 					if (message != null) {
@@ -78,6 +84,7 @@
                                             <button type="submit" class="btn btn-success">Register</button>
 					</div>
 				</div>     
+                                        
 				</form>
                                         <br>
 				<p>Already Have Account? <a href="login.jsp"> Login Here!</a></p>
