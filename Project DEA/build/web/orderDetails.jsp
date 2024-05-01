@@ -73,7 +73,9 @@
 						<td class="text-success"><%=order.getShipped() == 0 ? "ORDER_PLACED" : "ORDER_SHIPPED"%></td>
 					</tr>
 
-					
+					<%
+					}
+					%>
 
 				</tbody>
 			</table>
