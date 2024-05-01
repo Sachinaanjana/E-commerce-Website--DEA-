@@ -5,10 +5,16 @@
  */
 package service.impl;
 
+import beans.ProductBean;
+
 /**
  *
  * @author Admin
  */
 public class ProductServiceImpl {
+
+    public ProductBean getProductDetails(String prodId) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

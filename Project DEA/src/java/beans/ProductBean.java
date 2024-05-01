@@ -10,5 +10,13 @@ package beans;
  * @author ASUS
  */
 public class ProductBean {
+
+    public int getProdQuantity() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public String getProdName() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

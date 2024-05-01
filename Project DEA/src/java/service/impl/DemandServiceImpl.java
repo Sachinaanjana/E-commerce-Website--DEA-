@@ -5,10 +5,16 @@
  */
 package service.impl;
 
+import beans.DemandBean;
+
 /**
  *
  * @author Admin
  */
 public class DemandServiceImpl {
+
+    public boolean addProduct(DemandBean demandBean) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
