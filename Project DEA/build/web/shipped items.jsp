@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -11,6 +11,7 @@
 </head>
 <body style="background-color: #E6F9E6;">
 	<%
+	/* Checking the user credentials */
 	String userType = (String) session.getAttribute("usertype");
 	String userName = (String) session.getAttribute("username");
 	String password = (String) session.getAttribute("password");
@@ -98,6 +99,6 @@
 		</div>
 	</div>
 
-	<%@ include file="footer.html"%>
+	<%@ include file="footer.jsp"%>
 </body>
 </html>
