@@ -17,7 +17,20 @@
 <body style="background-color: #E6F9E6;">
 
 	
+<%
+	/* Checking the user credentials */
+	String userName = (String) session.getAttribute("username");
+	String password = (String) session.getAttribute("password");
 
+	if (userName == null || password == null) {
+
+		response.sendRedirect("login.jsp?message=Session Expired, Login Again!!");
+
+	}
+
+	OrderService dao = new OrderServiceImpl();
+	List<OrderDetails> orders = dao.getAllOrderDetails(userName);
+	%>
 
 
 	<jsp:include page="header.jsp" />
